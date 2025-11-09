@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://yourwebsite.com/</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Main Calculator Page -->
+  <url>
+    <loc>https://yourwebsite.com/calculator</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- US Coins Information Page -->
+  <url>
+    <loc>https://yourwebsite.com/us-coins</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Canadian Coins Information Page -->
+  <url>
+    <loc>https://yourwebsite.com/canadian-coins</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Mexican Coins Information Page -->
+  <url>
+    <loc>https://yourwebsite.com/mexican-coins</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://yourwebsite.com/about</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Silver Coin Value Guide -->
+  <url>
+    <loc>https://yourwebsite.com/guides/silver-coin-values</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Gold Coin Value Guide -->
+  <url>
+    <loc>https://yourwebsite.com/guides/gold-coin-values</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Precious Metal Price Trends -->
+  <url>
+    <loc>https://yourwebsite.com/trends/precious-metal-prices</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://yourwebsite.com/faq</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://yourwebsite.com/contact</loc>
+    <lastmod>2025-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

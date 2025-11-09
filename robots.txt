@@ -1,0 +1,16 @@
+# robots.txt for Coin Melt Value Calculator website
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow access to important files and directories
+Allow: /images/
+Allow: /styles.css
+Allow: /script.js
+Allow: /coinData.js
+
+# Point to sitemap
+Sitemap: https://yourwebsite.com/sitemap.xml

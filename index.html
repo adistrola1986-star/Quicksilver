@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+	<!-- Basic SEO Meta Tags -->
+<title>Coin Melt Value Calculator | Silver & Gold Coin Value | Alternative to Coinflation</title>
+<meta name="description" content="Calculate the melt value of US, Canadian, and Mexican gold and silver coins with real-time precious metal prices. A comprehensive alternative to Coinflation.com.">
+<meta name="keywords" content="coin melt value, silver coin calculator, gold coin value, coinflation alternative, coin worth, precious metal calculator">
+
+<!-- Canonical URL -->
+<!-- <link rel="canonical" href="https://yourwebsite.com/calculator">
+ -->
+<!-- Open Graph Tags for Social Sharing -->
+<meta property="og:title" content="Coin Melt Value Calculator | Silver & Gold Coins">
+<meta property="og:description" content="Calculate silver and gold coin melt values with real-time metal prices. US, Canadian, and Mexican coins supported.">
+<meta property="og:url" content="https://yourwebsite.com/calculator">
+<meta property="og:image" content="https://yourwebsite.com/images/calculator-preview.jpg">
+<meta property="og:type" content="website">
+ <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Coin Melt Value Calculator",
+      "description": "Calculate the precious metal value of silver and gold coins from the US, Canada, and Mexico.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Quicksilver Ledger</h1>
+        <p>Precious Metal Coin Melt Value Calculator</p>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" onclick="window.location.href='index.html'">Calculator</div>
+            <div class="tab" onclick="window.location.href='DownloadPage.html'">Download App</div>
+        </div>
+        
+       
+    <div class="container">
+        <div class="metal-prices">
+            <div class="price-card">
+                <h3>Silver Price</h3>
+                <div class="price-value" id="silver-price">$29.15/oz</div>
+                <small>Last updated: <span id="silver-update">Loading...</span></small>
+            </div>
+            
+            <div class="price-card">
+                <h3>Gold Price</h3>
+                <div class="price-value" id="gold-price">$1,800.00/oz</div>
+                <small>Last updated: <span id="gold-update">Loading...</span></small>
+            </div>
+        </div>
+        
+        <div class="tabs">
+			<div class="tab active" data-country="us" id="us-tab">US Coins</div>
+			<div class="tab" data-country="canada" id="canada-tab">Canada Coins</div>
+			<div class="tab" data-country="mexico" id="mexico-tab">Mexico Coins</div>
+			
+        </div>
+        
+        <div class="calculator">
+            <div class="calculator-panel">
+                <div class="tab-content active" data-country="us" id="us-content">
+                    <div class="form-group">
+                        <label for="us-coin-type">Coin Type:</label>
+                        <select id="us-coin-type">
+                            <option value="">Select coin type...</option>
+                            <optgroup label="Silver Coins">
+                                <option value="1942-1945 Silver War Nickel">1942-1945 Silver War Nickel</option>
+                                <option value="1892-1916 Silver Barber Dime">1892-1916 Silver Barber Dime</option>
+                                <option value="1916-1945 Silver Mercury Dime">1916-1945 Silver Mercury Dime</option>
+                                <option value="1946-1964 Roosevelt Silver Dime">1946-1964 Roosevelt Silver Dime</option>
+                                <option value="1892-1916 Barber Quarter">1892-1916 Barber Quarter</option>
+                                <option value="1916-1930 Standing Liberty Quarter">1916-1930 Standing Liberty Quarter</option>
+                                <option value="1932-1964 Washington Quarter">1932-1964 Washington Quarter</option>
+                                <option value="1892-1915 Barber Half Dollar">1892-1915 Barber Half Dollar</option>
+                                <option value="1916-1947 Walking Liberty Half Dollar">1916-1947 Walking Liberty Half Dollar</option>
+                                <option value="1948-1963 Franklin Half Dollar">1948-1963 Franklin Half Dollar</option>
+                                <option value="1964 Kennedy Half Dollar">1964 Kennedy Half Dollar</option>
+                                <option value="1965-1970 Kennedy Half Dollar">1965-1970 Kennedy Half Dollar</option>
+                                <option value="1878-1921 Morgan Dollar">1878-1921 Morgan Dollar</option>
+                                <option value="1921-1935 Peace Dollar">1921-1935 Peace Dollar</option>
+                                <option value="1971-1974, 1976 Ike Dollar">1971-1974, 1976 Ike Dollar</option>
+                                <option value="1986-2013 Silver Eagle">1986-2013 Silver Eagle</option>
+                            </optgroup>
+                            <optgroup label="Gold Coins">
+                                <option value="1849-1854 Liberty Gold Dollar Type 1">1849-1854 Liberty Gold Dollar Type 1</option>
+                                <option value="1854-1856 Liberty Gold Dollar Type 2">1854-1856 Liberty Gold Dollar Type 2</option>
+                                <option value="1856-1889 Liberty Gold Dollar Type 3">1856-1889 Liberty Gold Dollar Type 3</option>
+                                <option value="1840-1907 Liberty Quarter Eagle">1840-1907 Liberty Quarter Eagle</option>
+                                <option value="1839-1908 Liberty Half Eagle">1839-1908 Liberty Half Eagle</option>
+                                <option value="1908-1929 Indian Half Eagle">1908-1929 Indian Half Eagle</option>
+                                <option value="1838-1907 Liberty Eagle">1838-1907 Liberty Eagle</option>
+                                <option value="1907-1933 Indian Eagle">1907-1933 Indian Eagle</option>
+                                <option value="1849-1907 Liberty Double Eagle">1849-1907 Liberty Double Eagle</option>
+                                <option value="1907-1933 Saint Gaudens Double Eagle">1907-1933 Saint Gaudens Double Eagle</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="canada-content">
+                    <div class="form-group">
+                        <label for="canada-coin-type">Coin Type:</label>
+                        <select id="canada-coin-type">
+                            <option value="">Select coin type...</option>
+                            <optgroup label="Silver Coins">
+                                <option value="1858–1919 Nickel">1858–1919 Nickel</option>
+                                <option value="1920–1921 Nickel">1920–1921 Nickel</option>
+                                <option value="1858–1910 Dime">1858–1910 Dime</option>
+                                <option value="1910–1919 Dime">1910–1919 Dime</option>
+                                <option value="1920–1966 Dime">1920–1966 Dime</option>
+                                <option value="mid 1967-mid 1968 Dime">mid 1967-mid 1968 Dime</option>
+                                <option value="1908–1910 Quarter">1908–1910 Quarter</option>
+                                <option value="1910–1919 Quarter">1910–1919 Quarter</option>
+                                <option value="1920–1952 Quarter">1920–1952 Quarter</option>
+                                <option value="1953–1967 Quarter">1953–1967 Quarter</option>
+                                <option value="mid 1967-mid 1968 Quarter">mid 1967-mid 1968 Quarter</option>
+                                <option value="1908–1919 Fifty-cent">1908–1919 Fifty-cent</option>
+                                <option value="1920–1967 Fifty-cent">1920–1967 Fifty-cent</option>
+                                <option value="1935–1967 Voyageur Dollar">1935–1967 Voyageur Dollar</option>
+                            </optgroup>
+                            <optgroup label="Gold Coins">
+                                <option value="1912-1914 Five Dollar">1912-1914 Five Dollar</option>
+                                <option value="1912-1914 Ten Dollar">1912-1914 Ten Dollar</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="mexico-content">
+                    <div class="form-group">
+                        <label for="mexico-coin-type">Coin Type:</label>
+                        <select id="mexico-coin-type">
+                            <option value="">Select coin type...</option>
+                            <optgroup label="Silver Coins">
+                                <option value="1867-1905 5 Centavos">1867-1905 5 Centavos</option>
+                                <option value="1867-1905 10 Centavos">1867-1905 10 Centavos</option>
+                                <option value="1905-1914 10 Centavos">1905-1914 10 Centavos</option>
+                                <option value="1925-1935 10 Centavos">1925-1935 10 Centavos</option>
+                                <option value="1898-1905 20 Centavos">1898-1905 20 Centavos</option>
+                                <option value="1905-1914 20 Centavos">1905-1914 20 Centavos</option>
+                                <option value="1920-1943 20 Centavos">1920-1943 20 Centavos</option>
+                                <option value="1869-1890 25 Centavos">1869-1890 25 Centavos</option>
+                                <option value="1950-1953 25 Centavos">1950-1953 25 Centavos</option>
+                                <option value="1869-1894 50 Centavos">1869-1894 50 Centavos</option>
+                                <option value="1905-1918 50 Centavos">1905-1918 50 Centavos</option>
+                                <option value="1919-1945 50 Centavos">1919-1945 50 Centavos</option>
+                                <option value="1935 50 Centavos">1935 50 Centavos</option>
+                                <option value="1950-1951 50 Centavos">1950-1951 50 Centavos</option>
+                                <option value="1869-1913 1 Peso">1869-1913 1 Peso</option>
+                                <option value="1920-1945 1 Peso">1920-1945 1 Peso</option>
+                                <option value="1947-1948 1 Peso">1947-1948 1 Peso</option>
+                                <option value="1950 1 Peso">1950 1 Peso</option>
+                                <option value="1947-1948 5 Pesos">1947-1948 5 Pesos</option>
+                                <option value="1950-1954 5 Pesos">1950-1954 5 Pesos</option>
+                                <option value="1955-1959 5 Pesos">1955-1959 5 Pesos</option>
+                                <option value="1955-1960 10 Pesos">1955-1960 10 Pesos</option>
+                                <option value="1968-1972 25 Pesos">1968-1972 25 Pesos</option>
+                                <option value="1977-1979 100 Pesos">1977-1979 100 Pesos</option>
+                            </optgroup>
+                            <optgroup label="Gold Coins">
+                                <option value="1870-1905 1 Peso">1870-1905 1 Peso</option>
+                                <option value="1919-1947 2 Pesos">1919-1947 2 Pesos</option>
+                                <option value="1870-1892 2-1/2 Pesos">1870-1892 2-1/2 Pesos</option>
+                                <option value="1918-1948 2-1/2 Pesos">1918-1948 2-1/2 Pesos</option>
+                                <option value="1870-1905 5 Pesos">1870-1905 5 Pesos</option>
+                                <option value="1905-1955 5 Pesos">1905-1955 5 Pesos</option>
+                                <option value="1870-1905 10 Pesos">1870-1905 10 Pesos</option>
+                                <option value="1905-1959 10 Pesos">1905-1959 10 Pesos</option>
+                                <option value="1870-1905 20 Pesos">1870-1905 20 Pesos</option>
+                                <option value="1917-1959 20 Pesos">1917-1959 20 Pesos</option>
+                                <option value="1921-1947 50 Pesos">1921-1947 50 Pesos</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+                
+                <button id="calculate-btn">Calculate Melt Value</button>
+				<p class="melt-disclaimer"> *Disclaimer: Melting down silver or gold coins may be subject to legal restrictions, and users are responsible for ensuring compliance with all applicable local, state, and federal laws before engaging in such activities.</p>
+            </div>
+            
+            <div class="results">
+                <h3>Results</h3>
+                <img id="coin-image" class="coin-image" src="/api/placeholder/200/200" alt="Coin image">
+                
+                <div class="result-group">
+                    <div class="result-label">Coin Type:</div>
+                    <div class="result-value" id="result-coin-type">-</div>
+                </div>
+                
+                <div class="result-group">
+                    <div class="result-label">Metal Content:</div>
+                    <div class="result-value" id="result-metal-content">-</div>
+                </div>
+                
+                <div class="result-group">
+                    <div class="result-label">Weight per Coin:</div>
+                    <div class="result-value" id="result-weight">-</div>
+                </div>
+                
+                <div class="result-group">
+                    <div class="result-label">Quantity:</div>
+                    <div class="result-value" id="result-quantity">-</div>
+                </div>
+                
+                <div class="result-group">
+                    <div class="result-label">Melt Value:</div>
+                    <div class="result-value" id="result-melt-value" style="font-size: 1.5rem; font-weight: bold;">-</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="coin-facts">
+            <h3>Coin Facts</h3>
+            <p id="coin-facts-text">Select a coin to see interesting facts about it.</p>
+        </div>
+		<div class="app-feature" style="text-align: center;">
+            <div style="width: 100%;">
+                <h3>Ready to Transform Your Coin Collecting Experience?</h3>
+                <p style="max-width: 800px; margin: 20px auto;">Download Quicksilver Ledger today and join thousands of collectors who have modernized their numismatic hobby. Never lose track of your coins or their value again.</p>
+                <a href="#" class="store-button">Download Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Quicksilver Ledger. All rights reserved.</p>
+        <p>Disclaimer: Metal prices are updated regularly but may not reflect current market values. Melt values are for educational purposes only.</p>
+		<div class="ad-placeholder">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4878905040245747"
+     crossorigin="anonymous"></script>
+<!-- Test -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4878905040245747"
+     data-ad-slot="3271213904"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	 </div>
+    </footer>
+    
+    <script src="coinData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
